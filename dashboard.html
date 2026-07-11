@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>CrossMart Hub · 五站总览</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root{
+    --bg:#0f1419; --fg:#e6edf3; --muted:#8b949e;
+    --card:#161b22; --border:#30363d; --accent:#58a6ff;
+    --ok:#3fb950; --warn:#d29922; --err:#f85149;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--fg);padding:24px}
+  h1{margin:0 0 6px;font-size:22px}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:24px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;transition:border-color .2s}
+  .card:hover{border-color:var(--accent)}
+  .card h2{margin:0 0 8px;font-size:15px;color:var(--accent)}
+  .card .metric{font-size:28px;font-weight:600;margin:6px 0}
+  .card .meta{color:var(--muted);font-size:12px;line-height:1.6}
+  .card a{color:var(--accent);text-decoration:none;font-size:12px}
+  .card a:hover{text-decoration:underline}
+  .status-ok{color:var(--ok)}
+  .status-warn{color:var(--warn)}
+  .status-stale{color:var(--err)}
+  .cross{margin-top:32px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px}
+  .cross h2{margin:0 0 12px;font-size:15px;color:var(--accent)}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--border)}
+  th{color:var(--muted);font-weight:500}
+  .badge{display:inline-block;padding:2px 6px;border-radius:3px;font-size:11px;background:var(--border);margin-right:4px}
+  .footer{margin-top:32px;color:var(--muted);font-size:11px;text-align:center}
+</style>
+</head>
+<body>
+<h1>🌐 CrossMart Hub</h1>
+<div class="sub" id="sub">Loading…</div>
+
+<div class="grid" id="stations"></div>
+
+<div class="cross">
+  <h2>🔗 ASIN 交叉索引</h2>
+  <table>
+    <thead><tr><th>ASIN</th><th>Selector</th><th>Monitor</th><th>Listing</th><th>Simulator</th></tr></thead>
+    <tbody id="asin-tbody"><tr><td colspan="5" style="color:var(--muted)">暂无数据</td></tr></tbody>
+  </table>
+</div>
+
+<div class="footer">
+  Data: <a href="data/hub.json" style="color:var(--accent)">hub.json</a>
+  · Source: <a href="https://github.com/charlescome1995-prog/crossmart-hub" style="color:var(--accent)">github.com/charlescome1995-prog/crossmart-hub</a>
+</div>
+
+<script>
+const STATIONS = [
+  {key:"selector",  name:"🎯 Selector",  metric:"items_count",       metricLabel:"选品数（本周）"},
+  {key:"monitor",   name:"📊 Monitor",   metric:"asins_count",       metricLabel:"监控 ASIN 数"},
+  {key:"listing",   name:"📝 Listing",   metric:"drafts_count",      metricLabel:"生成草稿数"},
+  {key:"ops",       name:"⚙️ Ops",       metric:"last_date",         metricLabel:"最近更新日期",   isText:true},
+  {key:"simulator", name:"🔮 Simulator", metric:"predictions_count", metricLabel:"预测数",         extra:"calibrated_count"}
+];
+
+function fmt(t){ if(!t) return "—"; return new Date(t).toLocaleString("zh-CN",{hour12:false}); }
+function ago(t){
+  if(!t) return "—";
+  const s=(Date.now()-new Date(t).getTime())/1000;
+  if(s<60) return "刚刚";
+  if(s<3600) return Math.floor(s/60)+"分钟前";
+  if(s<86400) return Math.floor(s/3600)+"小时前";
+  return Math.floor(s/86400)+"天前";
+}
+function staleClass(t){
+  if(!t) return "status-stale";
+  const h=(Date.now()-new Date(t).getTime())/3600000;
+  if(h<48) return "status-ok";
+  if(h<168) return "status-warn";
+  return "status-stale";
+}
+
+fetch("data/hub.json?v="+Date.now())
+  .then(r=>r.json())
+  .then(hub=>{
+    document.getElementById("sub").textContent =
+      "五站数据总览 · Hub 生成于 " + fmt(hub.generated_at);
+
+    const grid = document.getElementById("stations");
+    grid.innerHTML = STATIONS.map(st=>{
+      const s = hub.stations[st.key] || {};
+      const val = s[st.metric];
+      const displayVal = st.isText ? (val||"—") : (val ?? 0);
+      const extra = st.extra ? `<div class="meta">已校准: ${s[st.extra] ?? 0}</div>` : "";
+      const link = s.url ? `<a href="${s.url}" target="_blank">→ 打开站点</a>` : "";
+      return `
+        <div class="card">
+          <h2>${st.name}</h2>
+          <div class="metric">${displayVal}</div>
+          <div class="meta">${st.metricLabel}</div>
+          ${extra}
+          <div class="meta"><span class="${staleClass(s.last_push)}">●</span> 最近推送: ${ago(s.last_push)}</div>
+          ${link}
+        </div>`;
+    }).join("");
+
+    const idx = hub.asin_to_sources || {};
+    const keys = Object.keys(idx);
+    if(keys.length){
+      document.getElementById("asin-tbody").innerHTML = keys.map(a=>{
+        const r = idx[a];
+        return `<tr>
+          <td><code>${a}</code></td>
+          <td>${r.selector_score ? r.selector_score : "—"}</td>
+          <td>${r.monitor_snapshots ?? "—"}</td>
+          <td>${r.listing_generated ? "✅" : "—"}</td>
+          <td>${r.simulator_predicted ? (r.simulator_calibrated ? "✅ 已校准" : "🔮 已预测") : "—"}</td>
+        </tr>`;
+      }).join("");
+    }
+  })
+  .catch(e=>{
+    document.getElementById("sub").textContent = "加载失败：" + e.message;
+  });
+</script>
+</body>
+</html>

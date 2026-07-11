@@ -1,0 +1,34 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-07-11T12:16:13+08:00",
+  "source": "crossmart-hub-actions",
+  "stations": {
+    "selector": {
+      "last_push": "2026-07-11T12:00:00+08:00",
+      "items_count": 0,
+      "url": "https://charlescome1995-prog.github.io/crossmart-selector/frontend/selection.html"
+    },
+    "monitor": {
+      "last_push": "2026-07-11T12:00:00+08:00",
+      "asins_count": 0,
+      "url": "https://charlescome1995-prog.github.io/crossmart-monitor/monitor.html"
+    },
+    "listing": {
+      "last_push": "2026-07-11T12:00:00+08:00",
+      "drafts_count": 0,
+      "url": null
+    },
+    "ops": {
+      "last_push": "2026-07-11T12:00:00+08:00",
+      "last_date": null,
+      "url": null
+    },
+    "simulator": {
+      "last_push": "2026-07-11T12:00:00+08:00",
+      "predictions_count": 0,
+      "calibrated_count": 0,
+      "url": null
+    }
+  },
+  "asin_to_sources": {}
+}

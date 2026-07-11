@@ -1,0 +1,36 @@
+name: Rebuild hub.json
+on:
+  push:
+    paths:
+      - 'data/selection.json'
+      - 'data/monitor.json'
+      - 'data/listing.json'
+      - 'data/ops.json'
+      - 'data/predictions.json'
+      - '.github/workflows/rebuild-hub.yml'
+      - 'scripts/rebuild_hub.py'
+  workflow_dispatch:
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Rebuild hub.json
+        run: python scripts/rebuild_hub.py
+      - name: Commit if changed
+        run: |
+          git config user.name  "hub-bot"
+          git config user.email "hub-bot@users.noreply.github.com"
+          git add data/hub.json
+          if git diff --cached --quiet; then
+            echo "no hub.json changes"
+          else
+            git commit -m "chore: rebuild hub.json [skip ci]"
+            git push
+          fi

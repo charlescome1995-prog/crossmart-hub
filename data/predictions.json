@@ -1,0 +1,12 @@
+{
+  "schema_version": "v1",
+  "generated_at": "2026-07-11T12:00:00+08:00",
+  "source": "crossmart-simulator",
+  "predictions": [],
+  "calibration": {
+    "last_run_at": null,
+    "avg_error_units_pct": null,
+    "avg_error_margin_pct": null,
+    "sample_size": 0
+  }
+}
