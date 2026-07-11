@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "generated_at": "2026-07-11T12:16:58+08:00",
+  "generated_at": "2026-07-11T12:18:28+08:00",
   "source": "crossmart-hub-actions",
   "stations": {
     "selector": {
@@ -9,8 +9,8 @@
       "url": "https://charlescome1995-prog.github.io/crossmart-selector/frontend/selection.html"
     },
     "monitor": {
-      "last_push": "2026-07-11T12:00:00+08:00",
-      "asins_count": 0,
+      "last_push": "2026-07-11T12:18:21+08:00",
+      "asins_count": 10,
       "url": "https://charlescome1995-prog.github.io/crossmart-monitor/monitor.html"
     },
     "listing": {
@@ -30,5 +30,36 @@
       "url": null
     }
   },
-  "asin_to_sources": {}
+  "asin_to_sources": {
+    "B0DBLCYTZ6": {
+      "monitor_snapshots": 1
+    },
+    "B0DW3YH4WH": {
+      "monitor_snapshots": 1
+    },
+    "B0DCX7628T": {
+      "monitor_snapshots": 1
+    },
+    "B0DJ1THRXM": {
+      "monitor_snapshots": 1
+    },
+    "B0DSHY2T4Q": {
+      "monitor_snapshots": 1
+    },
+    "B0CTX77NHH": {
+      "monitor_snapshots": 1
+    },
+    "B013PGADAW": {
+      "monitor_snapshots": 1
+    },
+    "B0D98XM5C9": {
+      "monitor_snapshots": 1
+    },
+    "B015HNGLJS": {
+      "monitor_snapshots": 1
+    },
+    "B0C7VP8SFV": {
+      "monitor_snapshots": 1
+    }
+  }
 }
