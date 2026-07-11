@@ -1,7 +1,158 @@
 {
   "schema_version": "v1",
-  "generated_at": "2026-07-11T12:00:00+08:00",
+  "generated_at": "2026-07-11T12:18:21+08:00",
   "source": "crossmart-monitor",
-  "keywords": [],
+  "keywords": [
+    {
+      "keyword": "batana oil",
+      "top_asins": [
+        {
+          "asin": "B0DBLCYTZ6",
+          "type": "unknown",
+          "rank": "",
+          "title": "Botanic Hearth Batana Oil for Hair Growth & Hair Treatment Oils 4 Fl Oz | Dr Sebi Inspired, 100% Raw & Pure Batana Oil | Scalp & Hair Treatment for Thickness & Strength | All Hair Types",
+          "price": "$12.99",
+          "rating": "4.4",
+          "reviews": "11759",
+          "launch_date": "",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$12.34 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0DW3YH4WH",
+          "type": "unknown",
+          "rank": "",
+          "title": "Batana Oil for Hair Growth, 100% Natural Pure Batana Oil Paste from Dr. Sebi Honduras, Prevents Hair Loss, Enhances Thickness, Organic Raw Scalp Mask for Women & Men (4.05 Oz)",
+          "price": "$9.99",
+          "rating": "4.7",
+          "reviews": "1599",
+          "launch_date": "",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$9.99 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0DCX7628T",
+          "type": "unknown",
+          "rank": "",
+          "title": "Lebanta Raw Batana Oil for Hair - 100% Pure, Organic 4oz Batana from Honduras for Fuller, Thicker-Looking Hair - Unrefined Cold Pressed Cosmetic Scalp Oil & Hair Mask, Gift for Women (1 Pack)",
+          "price": "$24.97",
+          "rating": "4.3",
+          "reviews": "2553",
+          "launch_date": "",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$22.47 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0DJ1THRXM",
+          "type": "unknown",
+          "rank": "",
+          "title": "Natural Riches Unrefined Organic Batana Oil, 8 fl oz, 100% Pure & Natural, Cold pressed Honduras Miracle Oil for Hair Growth.",
+          "price": "$16.31",
+          "rating": "4.4",
+          "reviews": "708",
+          "launch_date": "",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$16.31 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0DSHY2T4Q",
+          "type": "unknown",
+          "rank": "",
+          "title": "WEEMOTD 100% Raw Batana Oil for Hair, Unrefined Conditioning Hair & Scalp Oil from Honduras, Moisturizing Hair Mask for Dry Hair, Adds Shine & Softness for Men & Women, 2 fl oz",
+          "price": "$14.99",
+          "rating": "4.2",
+          "reviews": "1047",
+          "launch_date": "",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$14.99 off",
+          "prime_discount": "未开启"
+        }
+      ]
+    },
+    {
+      "keyword": "antifungal cream",
+      "top_asins": [
+        {
+          "asin": "B0CTX77NHH",
+          "type": "unknown",
+          "rank": "",
+          "title": "CHARMPOO Antifungal Cream, 2% Miconazole for Jock Itch, Athlete’s Foot & Ringworm, Fast-Absorbing Anti Fungal Skin Cream for Feet, Groin & Body Folds, 3.4 oz / 100g",
+          "price": "$22.95",
+          "rating": "4.6",
+          "reviews": "730",
+          "launch_date": "1, 2024",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$21.80 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B013PGADAW",
+          "type": "unknown",
+          "rank": "",
+          "title": "Globe Clotrimazole Antifungal Cream 1% USP (1 oz), Anti Fungal Treatment, Relieves Itching, Burning, Cracking and Scaling Associated Athletes Foot, Jock Itch, Ringworm and More",
+          "price": "$4.85",
+          "rating": "4.6",
+          "reviews": "16276",
+          "launch_date": "19, 2015",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$4.61 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0D98XM5C9",
+          "type": "unknown",
+          "rank": "",
+          "title": "Miconazole Antifungal Cream for Skin - 4 oz of Miconazole Nitrate for Jock Itch, Athlete's Foot, Itching, and Ringworm",
+          "price": "$9.99",
+          "rating": "4.6",
+          "reviews": "859",
+          "launch_date": "11, 2024",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$8.99 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B015HNGLJS",
+          "type": "unknown",
+          "rank": "",
+          "title": "Globe Clotrimazole Antifungal Cream 1% USP (1 oz), Anti Fungal Treatment, Relieves Itching, Burning, Cracking and Scaling Associated Athletes Foot, Jock Itch, Ringworm and More (Pack of 5)",
+          "price": "$6.49",
+          "rating": "4.6",
+          "reviews": "28590",
+          "launch_date": "17, 2015",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$6.17 off",
+          "prime_discount": "未开启"
+        },
+        {
+          "asin": "B0C7VP8SFV",
+          "type": "unknown",
+          "rank": "",
+          "title": "SimplyVital 1% Clotrimazole Antifungal Cream - Treats Most Athlete's Foot, Jock Itch, Ringworm - Athletes Foot Treatment Anti Fungal Cream for Skin, Ring Worm Medication for Humans, 2oz",
+          "price": "$27.97",
+          "rating": "4.4",
+          "reviews": "1056",
+          "launch_date": "13, 2023",
+          "listing_status": "",
+          "deal_activity": "Deal",
+          "coupon": "$25.17 off",
+          "prime_discount": "未开启"
+        }
+      ]
+    }
+  ],
   "asins": {}
 }
