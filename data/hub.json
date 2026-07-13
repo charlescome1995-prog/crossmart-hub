@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "generated_at": "2026-07-13T15:39:30+08:00",
+  "generated_at": "2026-07-13T15:40:14+08:00",
   "source": "crossmart-hub-actions",
   "stations": {
     "selector": {
@@ -24,42 +24,94 @@
       "url": null
     },
     "simulator": {
-      "last_push": "2026-07-11T12:00:00+08:00",
-      "predictions_count": 0,
+      "last_push": "2026-07-13T15:40:02+08:00",
+      "predictions_count": 18,
       "calibrated_count": 0,
       "url": null
     }
   },
   "asin_to_sources": {
     "B0DBLCYTZ6": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0DW3YH4WH": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0DCX7628T": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0DJ1THRXM": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0DSHY2T4Q": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0CTX77NHH": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B013PGADAW": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0D98XM5C9": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B015HNGLJS": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     },
     "B0C7VP8SFV": {
-      "monitor_snapshots": 1
+      "monitor_snapshots": 1,
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0013YYNDM": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B01NALN8Q9": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0734849YK": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0C6Y478R5": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0CMXF1NK3": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0D9PP29TJ": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0DJDPLV53": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
+    },
+    "B0FVSS8SR1": {
+      "simulator_predicted": true,
+      "simulator_calibrated": false
     }
   }
 }
