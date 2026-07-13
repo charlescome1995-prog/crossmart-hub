@@ -1,6 +1,6 @@
 {
   "schema_version": "v1",
-  "generated_at": "2026-07-13T15:40:14+08:00",
+  "generated_at": "2026-07-13T15:40:30+08:00",
   "source": "crossmart-hub-actions",
   "stations": {
     "selector": {
@@ -9,7 +9,7 @@
       "url": "https://charlescome1995-prog.github.io/crossmart-selector/frontend/selection.html"
     },
     "monitor": {
-      "last_push": "2026-07-11T12:18:21+08:00",
+      "last_push": "2026-07-13T15:40:20+08:00",
       "asins_count": 10,
       "url": "https://charlescome1995-prog.github.io/crossmart-monitor/monitor.html"
     },
