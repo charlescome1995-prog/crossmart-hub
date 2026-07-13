@@ -1,12 +1,324 @@
 {
   "schema_version": "v1",
-  "generated_at": "2026-07-11T12:00:00+08:00",
+  "generated_at": "2026-07-13T15:40:02+08:00",
   "source": "crossmart-simulator",
-  "predictions": [],
-  "calibration": {
-    "last_run_at": null,
-    "avg_error_units_pct": null,
-    "avg_error_margin_pct": null,
-    "sample_size": 0
-  }
+  "model_version": 1,
+  "model_confidence": 0.3,
+  "opportunity_score": 62.7,
+  "dimension_scores": {
+    "market_demand": 12.8,
+    "competition_intensity": 65.8,
+    "listing_quality": 60,
+    "offsite_potential": 50,
+    "price_positioning": 100,
+    "review_moat": 90
+  },
+  "predictions": [
+    {
+      "asin": "B0013YYNDM",
+      "title": "HERITAGE STORE Organic Castor Oil - Glass Bottle - Nourishing Treatment for Hair and Skin - Eyelash Serum for Eyelashes,",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 4473.5,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B013PGADAW",
+      "title": "Globe Clotrimazole Antifungal Cream 1% USP (1 oz), Anti Fungal Treatment, Relieves Itching, Burning, Cracking and Scalin",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -4558.37,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B015HNGLJS",
+      "title": "Globe Clotrimazole Antifungal Cream 1% USP (1 oz), Anti Fungal Treatment, Relieves Itching, Burning, Cracking and Scalin",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -6714.39,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B01NALN8Q9",
+      "title": "Kate Blanc Cosmetics Castor Oil Organic for Hair, Lashes, Face, Skin (2oz), 100% Pure, Cold Pressed, Hexane Free Hair Oi",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -16340.62,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0734849YK",
+      "title": "Handcraft Blends Organic Castor Oil 16 Fl Oz | 100% Pure and Natural | Premium Grade Carrier Oil | Hair, Eyelashes and E",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -7839.65,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0C6Y478R5",
+      "title": "Majestic Pure Oil - 100% Pure and Natural- Cold Pressed & Hexane Free Natural Hair Growth Oil for Eyelashes, Eyebrows, S",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -708.71,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0C7VP8SFV",
+      "title": "SimplyVital 1% Clotrimazole Antifungal Cream - Treats Most Athlete's Foot, Jock Itch, Ringworm - Athletes Foot Treatment",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 326.84,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0CMXF1NK3",
+      "title": "Batana Oil - 100% Pure & Natural from Honduras for Hair Growth, Eliminates Split Ends, Enhances Radiance & Nourishment f",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -499.43,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0CTX77NHH",
+      "title": "CHARMPOO Antifungal Cream, 2% Miconazole for Jock Itch, Athlete’s Foot & Ringworm, Fast-Absorbing Anti Fungal Skin Cream",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 159.79,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0D98XM5C9",
+      "title": "Miconazole Antifungal Cream for Skin - 4 oz of Miconazole Nitrate for Jock Itch, Athlete's Foot, Itching, and Ringworm",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -118.74,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0D9PP29TJ",
+      "title": "Florisan USDA Certified Organic Castor Oil 16oz Glass Bottle, Cold Pressed, Hexane-Free, Non-GMO, Vegan, 100% Pure Casto",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 627.42,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DBLCYTZ6",
+      "title": "Botanic Hearth Batana Oil for Hair Growth & Hair Treatment Oils 4 Fl Oz | Dr Sebi Inspired, 100% Raw & Pure Batana Oil |",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -567.42,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DCX7628T",
+      "title": "Lebanta Raw Batana Oil for Hair - 100% Pure, Organic 4oz Batana from Honduras for Fuller, Thicker-Looking Hair - Unrefin",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 610.16,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DJ1THRXM",
+      "title": "Natural Riches Unrefined Organic Batana Oil, 8 fl oz, 100% Pure & Natural, Cold pressed Honduras Miracle Oil for Hair Gr",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 22.4,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DJDPLV53",
+      "title": "Clean Nutra Organic Sea Moss Capsules with Ashwagandha, Black Seed Oil, Burdock Root, Bladderwrack, Moringa, Chlorella, ",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 86.57,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DSHY2T4Q",
+      "title": "WEEMOTD 100% Raw Batana Oil for Hair, Unrefined Conditioning Hair & Scalp Oil from Honduras, Moisturizing Hair Mask for ",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -0.25,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0DW3YH4WH",
+      "title": "Batana Oil for Hair Growth, 100% Natural Pure Batana Oil Paste from Dr. Sebi Honduras, Prevents Hair Loss, Enhances Thic",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": -220.94,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    },
+    {
+      "asin": "B0FVSS8SR1",
+      "title": "Antifungal Cream for Athletes Foot Treatment 60g | Relief from Jock Itch Ringworm & Skin Fungus, Advanced Dual Action Fo",
+      "predicted_at": "2026-07-13",
+      "predicted_monthly_units": null,
+      "predicted_monthly_revenue": null,
+      "predicted_net_profit": 11.97,
+      "predicted_net_margin": null,
+      "sales_basis": {
+        "from_bsr": null,
+        "from_reviews": null,
+        "method": "fallback_total_reviews(low_confidence)"
+      },
+      "actual_units": null,
+      "actual_net_margin": null,
+      "calibration_status": "pending"
+    }
+  ]
 }
